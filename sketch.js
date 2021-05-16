@@ -25,12 +25,16 @@ function draw(){
     
     if(backgroundImg){
         background(backgroundImg);
+        
+      
        }
 
   
     Engine.update(engine);
 
-   
+    textSize(25)
+  text("Time:6 PM ",50,50)
+
     if(hour >=04 && hour<=06 ){
         bg = "sunrise1.png"
         
@@ -63,6 +67,7 @@ function draw(){
  else if(hour >=16 && hour<=18 ){
      bg = "sunset7.png"
      text("Time: 5 PM",50 ,50)
+ 
  }
  else if(hour >=18 && hour<=20 ){
      bg ="sunset8.png"
@@ -86,16 +91,14 @@ function draw(){
  }
   else{
        bg = "sunset12.png"
+
   }
  
-    textSize(25);
-    text("Time: 5 PM",50 ,50);
-  }
-  
+}   
+
 
     
    
-
 
 
 
@@ -154,12 +157,4 @@ else if(hour >=00 && hour<=03 ){
    console.log(backgroundImg)   
     
        }
-
- 
-
-  
-              
-        
-
-
-
+    
